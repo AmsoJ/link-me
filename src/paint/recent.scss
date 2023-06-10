@@ -1,0 +1,87 @@
+.recent {
+    width: 100%;
+    min-height: fit-content;
+    background-color: var(--link-white);
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: sticky;
+    top: 70px;
+    .recent-main {
+        // border-bottom: 2px solid var(--light-gray);
+        .recent-head {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            svg {
+                display: none;
+                font-size: 20px;
+                // padding: 10px;
+                cursor: pointer;
+                border-radius: 50%;
+                transform: rotate(180deg);
+                &:hover {
+                    background-color: var(--med-gray);
+                }
+            }
+            &:hover {
+                svg {
+                    display: block;
+                }
+            }
+        }
+        .hashes {
+            height: 0px;
+            // background-color: yellow;
+            overflow: hidden;
+            transition:height .3s;
+            .hash {
+                display: flex;
+                padding: 5px 10px;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 5px;
+                font-size: 14px;
+                cursor: pointer;
+                &:hover {
+                    background-color: var(--med-gray);
+                }
+            }
+            &.hide {
+                height: 0px;
+                overflow: hidden;
+            }
+        }
+    }
+    .activities {
+        padding: 10px;
+        border-bottom: 2px solid var(--light-gray);
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 13px;
+            a {
+                color: var(--link-blue);
+            }
+            svg {
+                cursor: pointer;
+            }
+            &:last-child {
+                margin-bottom: unset;
+            }
+        }
+    }
+    .discover {
+        text-align: center;
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: var(--med-gray);
+        &:hover {
+            background-color: var(--dark-gray);
+        }
+    }
+}

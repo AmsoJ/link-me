@@ -1,0 +1,58 @@
+.addfeed {
+  position: relative;
+}
+.addfeed .addfeed-main {
+  background-color: var(--link-white);
+  border-radius: 10px;
+  padding: 10px;
+}
+.addfeed .addfeed-main .addhead {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  font-family: km;
+}
+.addfeed .addfeed-main .addhead svg {
+  cursor: pointer;
+}
+.addfeed .addfeed-main .addhead svg:hover {
+  color: red;
+}
+.addfeed .addfeed-main a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  color: var(--med-gray);
+  text-decoration: none;
+  margin-top: 5px;
+}
+.addfeed .addfeed-main a svg {
+  font-size: 12px;
+}
+.addfeed .empty {
+  height: 300px;
+  background-color: var(--link-white);
+  border-radius: 10px;
+  margin-top: 10px;
+  position: sticky;
+  top: 70px;
+}
+.addfeed .add-foot {
+  padding: 20px;
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: val(--med-gray);
+  gap: 5px;
+}
+.addfeed .add-foot p {
+  cursor: pointer;
+}
+.addfeed .add-foot p:hover {
+  color: var(--accent-blue);
+}

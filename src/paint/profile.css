@@ -1,0 +1,82 @@
+.profile .about-profile {
+  background-color: var(--link-white);
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 40vh;
+  position: relative;
+  isolation: isolate;
+}
+.profile .about-profile .cover-profile {
+  width: 100%;
+  height: 70px;
+  background-color: var(--med-gray);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.profile .about-profile .main-profile {
+  margin-top: 35px;
+  border: none;
+  border-bottom: 2px solid var(--light-gray);
+  padding-bottom: 10px;
+}
+.profile .about-profile .main-profile .profile-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--light-gray);
+  text-align: center;
+}
+.profile .about-profile .main-profile .profile-name {
+  margin-top: 20px;
+  text-align: center;
+  font-family: kb;
+}
+.profile .about-profile .main-profile .skills {
+  text-align: center;
+}
+.profile .about-profile .connect,
+.profile .about-profile .access,
+.profile .about-profile .insight {
+  padding: 5px;
+  cursor: pointer;
+}
+.profile .about-profile .connect:hover,
+.profile .about-profile .access:hover,
+.profile .about-profile .insight:hover {
+  background-color: var(--med-gray);
+}
+.profile .about-profile .connect {
+  border-bottom: 2px solid var(--light-gray);
+}
+.profile .about-profile .connect .connect-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 200;
+}
+.profile .about-profile .access {
+  border-bottom: 2px solid var(--light-gray);
+}
+.profile .about-profile .access .access-text {
+  font-size: 13px;
+}
+.profile .about-profile .access .link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: km;
+  font-weight: 700;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--dark-gray);
+}
+.profile .about-profile .insight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  height: 40px;
+  font-size: 14px;
+}

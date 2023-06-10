@@ -1,0 +1,55 @@
+.management {
+  padding: 10px;
+  border-bottom: 2px solid var(--light-gray);
+}
+.management .manage-head h3 {
+  color: var(--med-gray);
+  padding-bottom: 10px;
+}
+.management .connections {
+  height: 0px;
+  overflow: hidden;
+  transition: 0.7s;
+}
+.management .connections .networking {
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 7px 3px;
+  cursor: pointer;
+}
+.management .connections .networking:hover {
+  background-color: var(--light-gray);
+}
+.management .connections .networking svg {
+  color: var(--dark-gray);
+  font-size: 25px;
+}
+.management .connections .networking .title {
+  font-size: 20px;
+}
+.management .connections .networking .title,
+.management .connections .networking .count {
+  color: var(--med-gray);
+}
+.management .connections .networking .count {
+  margin-left: auto;
+}
+.management .show-less {
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: var(--med-gray);
+  font-family: km;
+  background-color: transparent;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.management .show-less:hover {
+  background-color: var(--light-gray);
+}

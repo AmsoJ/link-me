@@ -1,0 +1,9 @@
+.home {
+    // background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 3fr 250px;
+    gap: 25px;
+    &>* {
+        border-radius: 10px;
+    }
+}

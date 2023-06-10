@@ -1,0 +1,58 @@
+.addbox {
+    // background-color: black;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 5px;
+    .pic {
+        span {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: var(--med-gray);
+            border-radius: 50%;
+        }
+    }
+    .details {
+        .dept {
+            font-size: 18px;
+            font-family: km;
+        }
+        .category {
+            font-size: 13px;
+            color: var(--med-gray);
+        }
+        .follow {
+            position: relative;
+            padding: 0 24px;
+            height: 28px;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            .outline {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+                rect {
+                    width: 100%;
+                    height: 100%;
+                    fill: none;
+                    stroke: var(--link-blue);
+                    stroke-width: 2px;
+                    stroke-dasharray: 100%,20;
+                    transition: .3s;
+                }
+            }
+            &:hover {
+                .outline rect {
+                    stroke-dashoffset: 300;
+                }
+            }
+        }
+    }
+}

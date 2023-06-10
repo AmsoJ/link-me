@@ -1,0 +1,68 @@
+@font-face {
+    font-family: arlon;
+    src: url(./../fonts/ArlonSemiBold-DEMO.otf);
+}
+@font-face {
+    font-family: kb;
+    src: url(./../fonts/Kanit-Bold.ttf);
+}
+@font-face {
+    font-family: km;
+    src: url(./../fonts/Kanit-Medium.ttf);
+}
+@font-face {
+    font-family: kr;
+    src: url(./../fonts/Kanit-Regular.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: kr;
+}
+// root html
+:root {
+    /* color */
+    --link-blue: #0077b5;
+    --link-blue-sat: #d5e3eb;
+    --link-black: black;
+    --link-white: white;
+    // shades of gray
+    --dark-gray: #313335;
+    --med-gray: #b8b9bb;
+    --light-gray: #e6e7e9;
+    // accent
+    --accent-blue: #00a0dc;
+    --accent-red: #dd5143;
+    --accent-purple: #8d6cab;
+    --accent-orange: #e68523;
+}
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--light-gray);
+    #root {
+        width: 100%;
+        min-height: 100vh;
+    }
+}
+// global styles
+button, input {
+    border: none;
+    outline: none;
+}
+button {
+    cursor: pointer;
+}
+section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 70px 120px 10px 120px;
+}

@@ -1,0 +1,28 @@
+.network {
+  display: grid;
+  grid-template-columns: 300px auto;
+  gap: 30px;
+}
+.network .manage-network {
+  background-color: var(--link-white);
+  border-radius: 10px;
+}
+.network .manage-network .blank {
+  width: 100%;
+  height: 250px;
+  border-bottom: 2px solid var(--med-gray);
+}
+.network .manage-network a {
+  color: var(--accent-blue);
+  display: block;
+  height: 40px;
+  text-align: center;
+  padding: 5px;
+  border-bottom: 2px solid var(--med-gray);
+  font-size: 17px;
+  text-decoration: none;
+}
+.network .manage-network a:hover {
+  color: blue;
+  text-decoration: underline;
+}

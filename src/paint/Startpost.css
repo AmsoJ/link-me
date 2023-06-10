@@ -1,0 +1,63 @@
+.post-start {
+  background: var(--link-white);
+  padding: 5px 10px;
+  border-radius: 10px;
+  min-height: 100px;
+}
+.post-start .post-input {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post-start .post-input .fig {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: var(--light-gray);
+  border-radius: 50%;
+}
+.post-start .post-input input[type=text] {
+  width: calc(100% - 60px);
+  height: 50px;
+  border-radius: 30px;
+  padding: 0 0 0 20px;
+  border: 2px solid var(--med-gray);
+  font-family: km;
+}
+.post-start .post-input input[type=text]::placeholder {
+  color: var(--light-gray);
+}
+.post-start .operation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+.post-start .operation button {
+  width: 25%;
+  font-family: km;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: transparent;
+  color: var(--med-gray);
+}
+.post-start .operation button:first-child svg {
+  color: var(--accent-blue);
+}
+.post-start .operation button:nth-child(2) svg {
+  color: var(--accent-purple);
+}
+.post-start .operation button:nth-child(3) svg {
+  color: var(--accent-orange);
+}
+.post-start .operation button:last-child svg {
+  color: var(--accent-red);
+}
+.post-start .operation button svg {
+  font-size: 20px;
+}

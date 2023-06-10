@@ -1,0 +1,59 @@
+.master {
+  background-color: var(--link-white);
+  height: 50px;
+  padding: 5px 120px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.master .logo {
+  font-size: 40px;
+  color: var(--link-blue);
+}
+.master .searchbar {
+  margin-left: 10px;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.master .searchbar .search-icon {
+  font-size: 20px;
+  color: var(--med-gray);
+  position: absolute;
+  left: 20px;
+}
+.master .searchbar input {
+  width: 100%;
+  height: 100%;
+  background-color: var(--link-blue-sat);
+  font-size: 15px;
+  padding: 10px;
+  padding-left: 45px;
+}
+.master .other {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.master .other li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+.master .other li svg {
+  font-size: 30px;
+}
+.master .other a {
+  color: gold;
+  font-size: 12px;
+  text-align: center;
+}

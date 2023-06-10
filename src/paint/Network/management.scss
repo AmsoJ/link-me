@@ -1,0 +1,59 @@
+.management {
+    padding: 10px;
+    border-bottom: 2px solid var(--light-gray);
+    .manage-head {
+        h3 {
+            color: var(--med-gray);
+            padding-bottom: 10px;
+        }
+    }
+    .connections {
+        // background-color: yellow;
+        height: 0px;
+        overflow: hidden;
+        transition: .7s;
+        .networking {
+            display: flex;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 15px;
+            // background-color: wheat;
+            padding: 7px 3px;
+            cursor: pointer;
+            &:hover {
+                background-color: var(--light-gray);
+            }
+            svg {
+                color: var(--dark-gray);
+                font-size: 25px;
+            }
+            .title {
+                font-size: 20px;
+            }
+            .title,
+            .count {
+                color: var(--med-gray);
+            }
+            .count {
+                margin-left: auto;
+            }
+        }
+    }
+    .show-less {
+        padding: 5px;
+        margin-top: 10px;
+        border-radius: 10px;
+        color: var(--med-gray);
+        font-family: km;
+        background-color: transparent;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+        &:hover {
+            background-color: var(--light-gray);
+        }
+    }
+}

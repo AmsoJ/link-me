@@ -1,0 +1,51 @@
+.addbox {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 5px;
+}
+.addbox .pic span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: var(--med-gray);
+  border-radius: 50%;
+}
+.addbox .details .dept {
+  font-size: 18px;
+  font-family: km;
+}
+.addbox .details .category {
+  font-size: 13px;
+  color: var(--med-gray);
+}
+.addbox .details .follow {
+  position: relative;
+  padding: 0 24px;
+  height: 28px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.addbox .details .follow .outline {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.addbox .details .follow .outline rect {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--link-blue);
+  stroke-width: 2px;
+  stroke-dasharray: 100%, 20;
+  transition: 0.3s;
+}
+.addbox .details .follow:hover .outline rect {
+  stroke-dashoffset: 300;
+}

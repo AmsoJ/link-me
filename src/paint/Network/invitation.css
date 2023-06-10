@@ -1,0 +1,65 @@
+.invitation {
+  background-color: var(--link-white);
+  border-radius: 10px;
+}
+.invitation .invite-head {
+  height: 50px;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.invitation .invite-head h3 {
+  color: var(--med-gray);
+}
+.invitation .invite-head .show-all {
+  background-color: transparent;
+  font-size: 17px;
+  font-family: km;
+  color: var(--med-gray);
+}
+.invitation .people {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 5px 10px;
+}
+.invitation .people .profile-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--med-gray);
+}
+.invitation .people .profile-photo.active {
+  width: 50px;
+  height: 50px;
+}
+.invitation .people .accepted {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 50px);
+}
+.invitation .people .detail .name {
+  font-family: kb;
+  font-size: 25px;
+}
+.invitation .people button {
+  background-color: transparent;
+  font-family: kr;
+  font-size: 17px;
+}
+.invitation .people button.ignore {
+  color: var(--med-gray);
+  margin-left: auto;
+}
+.invitation .people button.accept {
+  color: var(--accent-blue);
+  border: solid 1px var(--accent-blue);
+  padding: 0px 24px;
+  border-radius: 20px;
+}
+.invitation .people button.accept:hover {
+  background-color: var(--link-blue-sat);
+}
